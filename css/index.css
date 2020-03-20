@@ -346,6 +346,7 @@ nav .links a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
