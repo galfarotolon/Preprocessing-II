@@ -8,6 +8,7 @@
   justify-content: center;
  max-width: 800px;
  margin: 0 auto;
+ border-bottom: 2px dashed @navigation-border;
 
  img{
    width: 100%;
@@ -17,6 +18,11 @@
 .headerContent{
   width: 100%;
   margin-top: 3%;
+}
+@media @mobile{
+ padding: 0 5%;
+  border-bottom: 2px dashed @navigation-border;
+
 }
 
 }
@@ -52,16 +58,45 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
-    }
+
+    
+        @media @mobile{
+          width: 100%;
+        }
+    
+
+  
+}
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile{
+        width: 100%;
+  
+         
+      }
+  
+
       img {
         border-radius: 10px;
+
+        @media @mobile{
+          margin-left: 3%;
+        }
+
+   
       }
     }
+
+    @media @mobile{
+      flex-direction: column;
+    }
+
+    @media @mobile{
+      justify-content: center;
+    } 
   }
 
   .inverse-content {
@@ -76,7 +111,17 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile{
+       text-align: center;
+      }
+
     }
+
+    @media @mobile{
+      flex-direction: column-reverse;
+    }
+
   }
 
   .content-destination {
@@ -86,6 +131,10 @@
     img {
       border-radius: 10px;
     }
+    
+    @media @mobile{
+      width: 100%;
+    }
   }
 
   .content-pick {
@@ -94,9 +143,26 @@
     display: flex;
     justify-content: space-between;
 
+
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile{
+        width: 100%;
+      }
+     
+    }
+    @media @mobile{
+      flex-direction: column;
+    }
+    .btn{
+      margin-left:10%;
+      margin-top: 3%;
+    }
+    @media @mobile{
+      margin: 0 3%;
     }
   }
 }
